@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="16" fill="#101827"/>
+  <rect x="2" y="2" width="796" height="446" rx="14" stroke="#22D3EE" stroke-opacity="0.3" stroke-width="2"/>
+  
+  <rect x="40" y="30" width="720" height="40" rx="8" fill="#131E30"/>
+  <circle cx="65" cy="50" r="6" fill="#EF4444"/>
+  <circle cx="85" cy="50" r="6" fill="#F59E0B"/>
+  <circle cx="105" cy="50" r="6" fill="#10B981"/>
+  <text x="135" y="55" font-family="Space Grotesk, sans-serif" font-size="14" fill="#94A3B8" font-weight="500">UAE Real Estate Market Analysis — Excel &amp; Power Query</text>
+
+  <rect x="40" y="90" width="720" height="320" rx="8" fill="#131E30"/>
+  <text x="65" y="125" font-family="Space Grotesk, sans-serif" font-size="16" fill="#F8FAFC" font-weight="600">Dubai &amp; UAE Property Transactions by Area (AED / sq.ft)</text>
+
+  <!-- Horizontal bars -->
+  <text x="65" y="170" font-family="Inter, sans-serif" font-size="12" fill="#94A3B8">Downtown Dubai</text>
+  <rect x="200" y="155" width="420" height="24" rx="4" fill="#3B82F6"/>
+  <text x="630" y="172" font-family="Space Grotesk, sans-serif" font-size="12" fill="#3B82F6" font-weight="600">1,850 AED</text>
+
+  <text x="65" y="220" font-family="Inter, sans-serif" font-size="12" fill="#94A3B8">Dubai Marina</text>
+  <rect x="200" y="205" width="370" height="24" rx="4" fill="#22D3EE"/>
+  <text x="580" y="222" font-family="Space Grotesk, sans-serif" font-size="12" fill="#22D3EE" font-weight="600">1,620 AED</text>
+
+  <text x="65" y="270" font-family="Inter, sans-serif" font-size="12" fill="#94A3B8">Business Bay</text>
+  <rect x="200" y="255" width="335" height="24" rx="4" fill="#6366F1"/>
+  <text x="545" y="272" font-family="Space Grotesk, sans-serif" font-size="12" fill="#6366F1" font-weight="600">1,480 AED</text>
+
+  <text x="65" y="320" font-family="Inter, sans-serif" font-size="12" fill="#94A3B8">Jumeirah Village (JVC)</text>
+  <rect x="200" y="305" width="185" height="24" rx="4" fill="#10B981"/>
+  <text x="395" y="322" font-family="Space Grotesk, sans-serif" font-size="12" fill="#10B981" font-weight="600">820 AED</text>
+
+  <text x="65" y="370" font-family="Inter, sans-serif" font-size="12" fill="#94A3B8">Dubai Silicon Oasis</text>
+  <rect x="200" y="355" width="145" height="24" rx="4" fill="#F59E0B"/>
+  <text x="355" y="372" font-family="Space Grotesk, sans-serif" font-size="12" fill="#F59E0B" font-weight="600">650 AED</text>
+</svg>
