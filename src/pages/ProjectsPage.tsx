@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, ArrowRight, Filter, Sparkles } from 'lucide-react';
+import { ArrowRight, Filter, Sparkles } from 'lucide-react';
 import Container from '../components/ui/Container';
 import SectionHeading from '../components/ui/SectionHeading';
 import { getProjectsByCategory } from '../data/projects';
@@ -82,35 +82,43 @@ const ProjectsPage: React.FC = () => {
                   transition={{ duration: 0.4, delay: idx * 0.08 }}
                   className="card-base card-hover flex flex-col bg-[#0D1527] border border-slate-800 rounded-2xl overflow-hidden group shadow-lg"
                 >
-                  {/* Visual Preview Image */}
-                  <div className="relative aspect-[16/9] w-full bg-slate-900 overflow-hidden border-b border-slate-800">
+                  {/* Visual Preview Image - NO OVERLAPPING BADGES */}
+                  <div className="relative aspect-[16/9] w-full bg-slate-950 overflow-hidden border-b border-slate-800">
                     <img
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                     />
-                    <div className="absolute top-3 left-3 flex items-center gap-2">
-                      <span
-                        className={`mono text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider ${
-                          project.status === 'completed'
-                            ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40'
-                            : 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
-                        }`}
-                      >
-                        {project.status === 'completed' ? '✓ Completed' : '⟳ In Progress'}
-                      </span>
-                      {project.featured && (
-                        <span className="mono text-[10px] font-bold px-2 py-1 rounded-md bg-blue-500/20 text-blue-300 border border-blue-500/40 flex items-center gap-1">
-                          <Sparkles size={11} /> Featured
-                        </span>
-                      )}
-                    </div>
                   </div>
 
                   {/* Content Body */}
                   <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
                     <div>
+                      {/* Clean Non-Overlapping Status Header */}
+                      <div className="flex items-center justify-between gap-2 mb-3">
+                        <div className="flex items-center gap-2">
+                          <span
+                            className={`mono text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider ${
+                              project.status === 'completed'
+                                ? 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/30'
+                                : 'bg-amber-500/15 text-amber-300 border border-amber-500/30'
+                            }`}
+                          >
+                            {project.status === 'completed' ? '✓ Completed' : '⟳ In Progress'}
+                          </span>
+                          {project.featured && (
+                            <span className="mono text-[10px] font-bold px-2 py-1 rounded-md bg-blue-500/15 text-blue-300 border border-blue-500/30 flex items-center gap-1">
+                              <Sparkles size={11} /> Featured
+                            </span>
+                          )}
+                        </div>
+
+                        <span className="mono text-[10px] text-slate-400 uppercase tracking-wider px-2 py-0.5 rounded bg-slate-800 border border-slate-700/60 font-medium">
+                          {project.category.replace('-', ' ')}
+                        </span>
+                      </div>
+
                       <h3 className="font-heading text-lg font-bold text-white group-hover:text-blue-400 transition-colors">
                         {project.title}
                       </h3>

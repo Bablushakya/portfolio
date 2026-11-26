@@ -15,9 +15,7 @@ import {
   Code2,
   ArrowRight,
   Sparkles,
-  PieChart as PieIcon,
   ShieldCheck,
-  CheckCircle2
 } from 'lucide-react';
 import {
   AreaChart,
@@ -461,7 +459,7 @@ const HomePage: React.FC = () => {
         </Container>
       </section>
 
-      {/* ════════════════════ FEATURED PROJECTS (WITH VISUAL MOCKUPS) ════════════════════ */}
+      {/* ════════════════════ FEATURED PROJECTS (WITH NON-OVERLAPPING CLEAN HEADERS) ════════════════════ */}
       <section className="section-padding bg-[#0A101E]">
         <Container>
           <SectionHeading
@@ -476,30 +474,35 @@ const HomePage: React.FC = () => {
                 key={project.id}
                 className="card-base card-hover flex flex-col bg-[#0D1527] border border-slate-800 rounded-2xl overflow-hidden group shadow-lg"
               >
-                {/* Visual Preview Banner */}
-                <div className="relative aspect-[16/9] w-full bg-slate-900 overflow-hidden border-b border-slate-800">
+                {/* Visual Preview Banner - CLEAN WITHOUT OVERLAPPING FLOATING BADGES */}
+                <div className="relative aspect-[16/9] w-full bg-slate-950 overflow-hidden border-b border-slate-800">
                   <img
                     src={project.image}
                     alt={`${project.title} dashboard preview`}
                     className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
-                  <div className="absolute top-3 left-3">
-                    <span
-                      className={`mono text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider ${
-                        project.status === 'completed'
-                          ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40'
-                          : 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
-                      }`}
-                    >
-                      {project.status === 'completed' ? '✓ Completed' : '⟳ In Progress'}
-                    </span>
-                  </div>
                 </div>
 
                 {/* Card Body */}
                 <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
                   <div>
+                    {/* Clean Status & Category Bar (No text collisions) */}
+                    <div className="flex items-center justify-between gap-2 mb-3">
+                      <span
+                        className={`mono text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider ${
+                          project.status === 'completed'
+                            ? 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/30'
+                            : 'bg-amber-500/15 text-amber-300 border border-amber-500/30'
+                        }`}
+                      >
+                        {project.status === 'completed' ? '✓ Completed' : '⟳ In Progress'}
+                      </span>
+                      <span className="mono text-[10px] text-slate-400 uppercase tracking-wider px-2 py-0.5 rounded bg-slate-800 border border-slate-700/60 font-medium">
+                        {project.category.replace('-', ' ')}
+                      </span>
+                    </div>
+
                     <h3 className="font-heading text-lg font-bold text-white group-hover:text-blue-400 transition-colors">
                       {project.title}
                     </h3>
@@ -508,7 +511,7 @@ const HomePage: React.FC = () => {
                     </p>
                   </div>
 
-                  {/* Tool Tags */}
+                  {/* Tool Tags & Link */}
                   <div>
                     <div className="flex flex-wrap gap-1.5 mb-5">
                       {project.tools.slice(0, 4).map((tool) => (
