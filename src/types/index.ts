@@ -32,6 +32,10 @@ export interface Skill {
   name: string;
   description: string;
   icon?: string;
+  tools?: string[];
+  snippet?: string;
+  appliedIn?: string;
+  projectUrl?: string;
 }
 
 export interface SkillCategory {
