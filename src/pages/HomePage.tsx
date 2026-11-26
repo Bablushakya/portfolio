@@ -16,6 +16,9 @@ import {
   ArrowRight,
   Sparkles,
   ShieldCheck,
+  FileText,
+  Activity,
+  Layers,
 } from 'lucide-react';
 import {
   AreaChart,
@@ -59,16 +62,20 @@ const kpiCards = [
   { label: 'Internship', value: '6 Months', sub: 'Ziion Technology Data Analyst', color: '#10B981', change: 'Verified' },
 ];
 
-const techBadges = [
-  'SQL',
-  'Microsoft Power BI',
-  'Advanced Excel',
-  'Python (Pandas/Seaborn)',
-  'Data Cleaning & ETL',
-  'Interactive Dashboards',
-  'KPI Monitoring',
-  'MIS Reporting',
-  'Business Intelligence',
+const marqueeRow1 = [
+  { name: 'SQL', icon: Database, color: '#3B82F6', tag: 'Queries & Joins' },
+  { name: 'Microsoft Power BI', icon: BarChart3, color: '#22D3EE', tag: 'DAX & Modeling' },
+  { name: 'Advanced Excel', icon: FileSpreadsheet, color: '#10B981', tag: 'Pivots & XLOOKUP' },
+  { name: 'Python (Pandas/Seaborn)', icon: Code2, color: '#EC4899', tag: 'Data Science' },
+  { name: 'Data Cleaning & ETL', icon: Sparkles, color: '#8B5CF6', tag: 'Pipeline Prep' },
+];
+
+const marqueeRow2 = [
+  { name: 'Interactive Dashboards', icon: TrendingUp, color: '#22D3EE', tag: 'Visual Insights' },
+  { name: 'KPI Monitoring', icon: Activity, color: '#3B82F6', tag: 'Performance Metrics' },
+  { name: 'MIS Reporting', icon: FileText, color: '#10B981', tag: 'Executive Reporting' },
+  { name: 'Business Intelligence', icon: ShieldCheck, color: '#6366F1', tag: 'Decision Support' },
+  { name: 'Financial & Market Analytics', icon: Layers, color: '#F59E0B', tag: 'Trend Analysis' },
 ];
 
 const HomePage: React.FC = () => {
@@ -347,21 +354,73 @@ const HomePage: React.FC = () => {
         </Container>
       </section>
 
-      {/* ════════════════════ TECH TICKER ════════════════════ */}
-      <section className="py-4 bg-[#0A101D] border-y border-slate-800">
-        <Container>
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
-            {techBadges.map((badge, idx) => (
-              <span
-                key={badge}
-                className="mono text-xs font-medium text-slate-400 flex items-center gap-3 hover:text-blue-400 transition-colors"
-              >
-                {idx > 0 && <span className="text-blue-500/40">•</span>}
-                {badge}
-              </span>
-            ))}
+      {/* ════════════════════ 2-ROW INFINITE HORIZONTAL MARQUEE TICKER ════════════════════ */}
+      <section className="py-7 bg-[#090E1A] border-y border-slate-800/80 relative overflow-hidden">
+        {/* Left & Right gradient edge masks for smooth fade in/out */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 sm:w-36 bg-gradient-to-r from-[#070B14] to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 sm:w-36 bg-gradient-to-l from-[#070B14] to-transparent z-10" />
+
+        <div className="space-y-4">
+          {/* Row 1: Moving from Right to Left */}
+          <div className="flex overflow-hidden">
+            <div className="animate-marquee-left flex items-center gap-4">
+              {[...marqueeRow1, ...marqueeRow1, ...marqueeRow1, ...marqueeRow1].map((item, idx) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={`r1-${idx}`}
+                    className="flex items-center gap-3 px-4 py-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-blue-500/40 transition-colors shadow-sm flex-shrink-0 cursor-default group"
+                  >
+                    <div
+                      className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
+                      style={{ backgroundColor: `${item.color}15`, color: item.color }}
+                    >
+                      <Icon size={17} />
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="font-heading text-xs sm:text-sm font-bold text-white whitespace-nowrap">
+                        {item.name}
+                      </span>
+                      <span className="mono text-[10px] text-slate-400 whitespace-nowrap">
+                        {item.tag}
+                      </span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-        </Container>
+
+          {/* Row 2: Moving from Left to Right */}
+          <div className="flex overflow-hidden">
+            <div className="animate-marquee-right flex items-center gap-4">
+              {[...marqueeRow2, ...marqueeRow2, ...marqueeRow2, ...marqueeRow2].map((item, idx) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={`r2-${idx}`}
+                    className="flex items-center gap-3 px-4 py-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-cyan-500/40 transition-colors shadow-sm flex-shrink-0 cursor-default group"
+                  >
+                    <div
+                      className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
+                      style={{ backgroundColor: `${item.color}15`, color: item.color }}
+                    >
+                      <Icon size={17} />
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="font-heading text-xs sm:text-sm font-bold text-white whitespace-nowrap">
+                        {item.name}
+                      </span>
+                      <span className="mono text-[10px] text-slate-400 whitespace-nowrap">
+                        {item.tag}
+                      </span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* ════════════════════ ABOUT BENTO ════════════════════ */}

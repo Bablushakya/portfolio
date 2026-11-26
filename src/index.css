@@ -89,13 +89,6 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.35), 0 0 20px -5px rgba(59, 130, 246, 0.15);
 }
 
-.glass-panel {
-  background: rgba(17, 26, 46, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(148, 163, 184, 0.14);
-}
-
 .container-center {
   max-width: 1240px;
   margin-left: auto;
@@ -114,6 +107,42 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
   }
+}
+
+/* Infinite Horizontal Marquee Animations */
+@keyframes marqueeLeft {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: marqueeLeft 32s linear infinite;
+}
+
+.animate-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: marqueeRight 32s linear infinite;
+}
+
+.animate-marquee-left:hover,
+.animate-marquee-right:hover {
+  animation-play-state: paused;
 }
 
 /* Scrollbar */
