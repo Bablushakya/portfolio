@@ -26,7 +26,7 @@ const resumeVersions = [
     description:
       'Ideal for Data Analyst and Junior Analytics roles. Emphasizes end-to-end data lifecycle from SQL joins and cleaning to KPI monitoring and actionable insights.',
     tags: ['SQL', 'Power BI', 'Excel', 'Python', 'KPIs', 'EDA'],
-    fileName: 'Bablu-Shakya-Resume.pdf',
+    fileName: 'Bablu-Resume.pdf',
     highlight: true,
   },
   {
@@ -36,7 +36,7 @@ const resumeVersions = [
     description:
       'Tailored for BI Analyst and Reporting Specialist positions. Showcases dashboard architecture, automated reporting rhythms, and stakeholder data storytelling.',
     tags: ['Power BI', 'DAX', 'Executive Reporting', 'Dashboard Architecture'],
-    fileName: 'Bablu-Shakya-Resume.pdf',
+    fileName: 'Bablu-Resume.pdf',
     highlight: false,
   },
   {
@@ -46,7 +46,7 @@ const resumeVersions = [
     description:
       'Tailored for MIS Executive and Operations Analytics openings. Highlights complex Excel workflows, XLOOKUP modeling, error auditing, and automated reporting.',
     tags: ['Advanced Excel', 'Pivot Tables', 'MIS Automation', 'Data Reconciliation'],
-    fileName: 'Bablu-Shakya-Resume.pdf',
+    fileName: 'Bablu-Resume.pdf',
     highlight: false,
   },
 ];
@@ -55,10 +55,10 @@ const ResumePage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Resume &amp; CV Formats | Bablu Shakya Portfolio</title>
+        <title>Resume &amp; CV Formats | Bablu Portfolio</title>
         <meta
           name="description"
-          content="Download Bablu Shakya's verified resumes: Data Analyst, BI Specialist, and MIS Executive CV formats. Open to UAE relocation."
+          content="Download Bablu's verified resumes: Data Analyst, BI Specialist, and MIS Executive CV formats. Open to UAE relocation."
         />
         <link rel="canonical" href="https://bablushakya.dev/resume" />
       </Helmet>
@@ -98,7 +98,7 @@ const ResumePage: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
                 <a
-                  href="/resume/Bablu-Shakya-Resume.pdf"
+                  href="/resume/Bablu-Resume.pdf"
                   download
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white shadow-lg shadow-blue-500/25 hover:scale-105 transition-all duration-200"
                 >

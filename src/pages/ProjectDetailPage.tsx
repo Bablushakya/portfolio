@@ -309,7 +309,7 @@ const ProjectDetailPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>{project.title} | Bablu Shakya Analytics Case Study</title>
+        <title>{project.title} | Bablu Analytics Case Study</title>
         <meta name="description" content={project.description} />
         <link rel="canonical" href={`https://bablushakya.dev/projects/${project.id}`} />
       </Helmet>

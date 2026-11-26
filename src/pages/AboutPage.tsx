@@ -23,10 +23,10 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>About Me | Bablu Shakya — Data Analytics &amp; BI</title>
+        <title>About Me | Bablu — Data Analytics &amp; BI</title>
         <meta
           name="description"
-          content="Learn about Bablu Shakya, a B.Tech IT graduate and Data Analytics professional looking for opportunities in the UAE. Background, education, and career aspirations."
+          content="Learn about Bablu, a B.Tech IT graduate and Data Analytics professional looking for opportunities in the UAE. Background, education, and career aspirations."
         />
         <link rel="canonical" href="https://bablushakya.dev/about" />
       </Helmet>
@@ -36,7 +36,7 @@ const AboutPage: React.FC = () => {
           <SectionHeading
             eyebrow="Personal Background"
             title="Behind the Data"
-            subtitle="The background, analytical methodology, and professional objectives of Bablu Shakya."
+            subtitle="The background, analytical methodology, and professional objectives of Bablu."
           />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start max-w-6xl mx-auto">
@@ -46,12 +46,12 @@ const AboutPage: React.FC = () => {
                 {/* Visual Avatar */}
                 <div className="w-28 h-28 rounded-2xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-400 p-1 mx-auto mb-5 shadow-lg shadow-blue-500/20">
                   <div className="w-full h-full rounded-[14px] bg-[#070B14] flex items-center justify-center font-heading text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-                    BS
+                    B
                   </div>
                 </div>
 
                 <h3 className="font-heading text-xl font-bold text-white mb-1">
-                  Bablu Shakya
+                  Bablu
                 </h3>
                 <p className="text-xs font-semibold text-blue-400 mb-3">
                   Data Analyst · Business Intelligence
@@ -95,7 +95,7 @@ const AboutPage: React.FC = () => {
                   — Summary of Qualifications
                 </span>
                 <p className="text-sm sm:text-base text-slate-200 leading-relaxed">
-                  I am <strong className="text-white">Bablu Shakya</strong>, a B.Tech Information
+                  I am <strong className="text-white">Bablu</strong>, a B.Tech Information
                   Technology graduate with a strong interest in Data Analytics, Business Intelligence,
                   and business reporting.
                 </p>

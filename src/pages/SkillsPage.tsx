@@ -37,10 +37,10 @@ const SkillsPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Technical Skills &amp; Stack | Bablu Shakya</title>
+        <title>Technical Skills &amp; Stack | Bablu</title>
         <meta
           name="description"
-          content="Comprehensive technical skills of Bablu Shakya: SQL queries, Power BI dashboards, advanced Excel MIS reporting, and Python data manipulation."
+          content="Comprehensive technical skills of Bablu: SQL queries, Power BI dashboards, advanced Excel MIS reporting, and Python data manipulation."
         />
         <link rel="canonical" href="https://bablushakya.dev/skills" />
       </Helmet>

@@ -20,10 +20,10 @@ const ExperiencePage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Experience &amp; Education | Bablu Shakya Portfolio</title>
+        <title>Experience &amp; Education | Bablu Portfolio</title>
         <meta
           name="description"
-          content="Professional experience and academic background of Bablu Shakya: Data Analyst Intern at Ziion Technology, IDEMA Data Analytics Training, and B.Tech IT degree."
+          content="Professional experience and academic background of Bablu: Data Analyst Intern at Ziion Technology, IDEMA Data Analytics Training, and B.Tech IT degree."
         />
         <link rel="canonical" href="https://bablushakya.dev/experience" />
       </Helmet>

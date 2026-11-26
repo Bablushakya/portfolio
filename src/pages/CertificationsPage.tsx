@@ -76,10 +76,10 @@ const CertificationsPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Certifications &amp; Credentials | Bablu Shakya</title>
+        <title>Certifications &amp; Credentials | Bablu</title>
         <meta
           name="description"
-          content="Verified certificates, specialized training, and practical credentials in Power BI, SQL, Excel, and Data Analytics by Bablu Shakya."
+          content="Verified certificates, specialized training, and practical credentials in Power BI, SQL, Excel, and Data Analytics by Bablu."
         />
         <link rel="canonical" href="https://bablushakya.dev/certifications" />
       </Helmet>

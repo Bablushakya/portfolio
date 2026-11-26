@@ -17,8 +17,8 @@ export const socialLinks = {
 };
 
 export const ownerInfo = {
-  name: 'Bablu Shakya',
-  shortName: 'Bablu Shakya',
+  name: 'Bablu',
+  shortName: 'Bablu',
   headline: 'Data Analyst | Business Intelligence | MIS Reporting',
   tagline: 'Turning Data into Actionable Insights.',
   location: 'India · Open to UAE Relocation',

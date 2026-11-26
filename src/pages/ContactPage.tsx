@@ -63,7 +63,7 @@ const ContactPage: React.FC = () => {
             from_email: data.email,
             subject: data.subject,
             message: data.message,
-            to_name: 'Bablu Shakya',
+            to_name: 'Bablu',
           },
           publicKey
         );
@@ -81,10 +81,10 @@ const ContactPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Contact | Bablu Shakya — Data Analyst in UAE</title>
+        <title>Contact | Bablu — Data Analyst in UAE</title>
         <meta
           name="description"
-          content="Get in touch with Bablu Shakya for Data Analyst, Business Intelligence, and MIS Executive roles in the UAE. Ready for immediate relocation."
+          content="Get in touch with Bablu for Data Analyst, Business Intelligence, and MIS Executive roles in the UAE. Ready for immediate relocation."
         />
         <link rel="canonical" href="https://bablushakya.dev/contact" />
       </Helmet>

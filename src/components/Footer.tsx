@@ -16,10 +16,10 @@ const Footer: React.FC = () => {
           <div className="md:col-span-5 space-y-4">
             <Link to="/" className="inline-flex items-center gap-2 group">
               <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center font-bold text-white shadow-md shadow-blue-500/20">
-                BS
+                B
               </div>
               <span className="font-heading text-xl font-bold text-white">
-                Bablu Shakya
+                Bablu
               </span>
             </Link>
 
@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
 
         {/* Bottom copyright */}
         <div className="mt-12 pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
-          <p>© {currentYear} Bablu Shakya. All rights reserved.</p>
+          <p>© {currentYear} Bablu. All rights reserved.</p>
           <p className="mono text-[11px] text-slate-400">
             SQL · Power BI · Excel · Python · MIS Reporting
           </p>

@@ -84,10 +84,10 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Bablu Shakya | Data Analyst &amp; Business Intelligence Portfolio</title>
+        <title>Bablu | Data Analyst &amp; Business Intelligence Portfolio</title>
         <meta
           name="description"
-          content="Bablu Shakya — Data Analyst & Business Intelligence Professional. Turning complex data into clear dashboards and actionable insights. Open to UAE relocation."
+          content="Bablu — Data Analyst & Business Intelligence Professional. Turning complex data into clear dashboards and actionable insights. Open to UAE relocation."
         />
         <link rel="canonical" href="https://bablushakya.dev" />
       </Helmet>
@@ -436,7 +436,7 @@ const HomePage: React.FC = () => {
                 From Data to <span className="text-gradient">Strategic Decisions.</span>
               </h2>
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-                I am Bablu Shakya, a B.Tech Information Technology graduate with focused expertise in
+                I am Bablu, a B.Tech Information Technology graduate with focused expertise in
                 Data Analytics, Business Intelligence and MIS Reporting.
               </p>
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed">

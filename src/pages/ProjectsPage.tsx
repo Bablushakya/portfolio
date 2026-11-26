@@ -24,10 +24,10 @@ const ProjectsPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Projects | Bablu Shakya — Data Analyst &amp; BI Portfolio</title>
+        <title>Projects | Bablu — Data Analyst &amp; BI Portfolio</title>
         <meta
           name="description"
-          content="Explore data analytics projects by Bablu Shakya: Financial Performance Dashboard, Customer Churn Analysis, UAE Real Estate Market Analysis, and E-commerce Profitability."
+          content="Explore data analytics projects by Bablu: Financial Performance Dashboard, Customer Churn Analysis, UAE Real Estate Market Analysis, and E-commerce Profitability."
         />
         <link rel="canonical" href="https://bablushakya.dev/projects" />
       </Helmet>

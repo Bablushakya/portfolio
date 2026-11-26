@@ -8,7 +8,7 @@ const NotFoundPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Page Not Found | Bablu Shakya Portfolio</title>
+        <title>Page Not Found | Bablu Portfolio</title>
       </Helmet>
       <section className="section-padding min-h-[60vh] flex items-center" style={{ background: 'var(--bg)' }}>
         <Container>

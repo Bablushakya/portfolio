@@ -42,14 +42,14 @@ const Navbar: React.FC = () => {
           <Link
             to="/"
             className="flex items-center gap-2 group text-decoration-none focus-visible:outline-none"
-            aria-label="Bablu Shakya Portfolio Home"
+            aria-label="Bablu Portfolio Home"
           >
             <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center font-bold text-white shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform duration-200">
-              BS
+              B
             </div>
             <div>
               <span className="font-heading font-bold text-base text-white tracking-tight block">
-                Bablu Shakya
+                Bablu
               </span>
               <span className="mono text-[10px] text-blue-400 block -mt-1 font-medium">
                 DATA ANALYST
@@ -125,11 +125,11 @@ const Navbar: React.FC = () => {
                 <div className="flex items-center justify-between pb-6 border-b border-white/10 mb-6">
                   <div className="flex items-center gap-2.5">
                     <div className="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center font-bold text-white text-sm">
-                      BS
+                      B
                     </div>
                     <div>
                       <span className="font-heading font-bold text-sm text-white block">
-                        Bablu Shakya
+                        Bablu
                       </span>
                       <span className="mono text-[10px] text-blue-400 block -mt-1">
                         UAE Relocation Ready
